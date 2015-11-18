@@ -1,0 +1,16 @@
+/// Makes a flex item for evenly spaced grid items.
+/// Must be direct child of a Flex Container (recommened to use yoga-container or yoga-outer-container)
+///
+/// @example scss - Usage
+///   .element {
+///     @include yoga-even-column;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     flex: 1;
+///   }
+
+@mixin yoga-even-column {
+  flex: 1;
+}
