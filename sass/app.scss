@@ -4,3 +4,31 @@
 $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 @import "box-sizing";
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+  background: #2b2b2a;
+}
+.background-top, .background {
+  position: relative;
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  width: 40%;
+  margin: auto;
+  top: 80%;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 80%;
+  align-items: center;
+}
+.btn {
+  position: absolute;
+  float: right;
+  margin-left: 2px;
+}
