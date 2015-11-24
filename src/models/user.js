@@ -2,12 +2,12 @@ export default Backbone.Model.extend({
   urlRoot: 'http://tiny-lr.herokuapp.com/collections/users-bbs',
 
   defaults: {
-    name: '',
+    username: '',
     password: '',
   },
 
   getFormErrors() {
-    if (!this.get('email')) {
+    if (!this.get('username')) {
       return `Please enter an email address before logging in`;
     }
 
