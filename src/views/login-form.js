@@ -8,11 +8,11 @@ export default Backbone.View.extend({
       var username = this.$el.find('#user-name').val();
       var password = this.el.find('#user-password').val();
 
-      var currUsers =
+      var userInfo =
       [
         {user: 'aaron@theironyar.com', password: 'password123'},
         {user: 'admin@google.com', password: 'pandas'},
-        {user: 'bbsoucy@gmail.com', password: 'honeycrisp'}
+        {user: 'bbsoucy@gmail.com', password: 'honeycrisp'},
       ];
 
       var foundMatch = userArray.reduce(function(carry, curr) {
