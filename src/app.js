@@ -1,4 +1,4 @@
-import LoginForm from './views/login-form.js';
+import LoginForm from './views/login-form';
 
 // import Users from '.models/user';
 

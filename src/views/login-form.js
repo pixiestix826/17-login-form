@@ -25,7 +25,7 @@ export default Backbone.View.extend({
 
       if (foundMatch === true) {
         alert('Welcome to The Ironyard');
-        window.location = 'http://theironyar.com';
+        window.location = 'http://theironyard.com';
       } else {
         alert('Please try again: username and/or password is not on record');
       }
