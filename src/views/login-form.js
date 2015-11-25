@@ -6,8 +6,8 @@ export default Backbone.View.extend({
     submit(ev) {
       ev.preventDefault();
 
-      var username = this.$el.find('#user-name').val();
-      var password = this.$el.find('#user-password').val();
+      var username = this.$el.find('#username').val();
+      var password = this.$el.find('#password').val();
 
       var attempt = new User({username, password});
 
