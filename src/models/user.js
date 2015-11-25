@@ -10,7 +10,7 @@ export default Backbone.Model.extend({
     var username = this.get('username');
     var password = this.get('password');
     debugger;
-    var usernameExists = this.options.reduce(function(carry, curr) {
+    var usernameExists = this.users.reduce(function(carry, curr) {
         if (curr.user === username) {
           return true;
         }
@@ -18,7 +18,7 @@ export default Backbone.Model.extend({
         return carry;
       }, false);
 
-    var passwordExists = this.options.reduce(function(carry, curr) {
+    var passwordExists = this.users.reduce(function(carry, curr) {
       if (curr.password === password) {
         return true;
       }
