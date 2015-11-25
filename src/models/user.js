@@ -9,7 +9,7 @@ export default Backbone.Model.extend({
   getValidationErrors() {
     var username = this.get('username');
     var password = this.get('password');
-    debugger;
+
     var usernameExists = this.users.reduce(function(carry, curr) {
         if (curr.user === username) {
           return true;
